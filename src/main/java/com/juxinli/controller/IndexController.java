@@ -9,19 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by ivy on 2017/11/23.
  */
-@RestController
-@RequestMapping(value = "index")
+//@RestController
+//@RequestMapping(value = "index")
 public class IndexController {
 
-    @Autowired
-    private TestRegistryService testRegistryService;
+    //只暴露servic层
 
-    @RequestMapping("/hello")
-    public String index(@RequestParam String param1){
-        String name=testRegistryService.hello("zz");
-        System.out.println("xx=="+name);
-        return "";
-    }
+//    @Autowired
+//    private TestRegistryService testRegistryService;
+//
+//    @RequestMapping("/hello")
+//    public String index(@RequestParam String param1){
+//        String name=testRegistryService.hello("zz");
+//        System.out.println("xx=="+name);
+//        return "";
+//    }
 
 
 }
